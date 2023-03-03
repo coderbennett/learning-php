@@ -86,3 +86,86 @@ Plain text variables.
 
 ### methods
 `strtolower();`
+This will turn the string into all lowercase letters.
+
+`strtoupper();`
+This will turn the string into all uppercase letters.
+
+`strlen();`
+This will return the length of the string.
+
+`$phrase[0];`
+This is how we can access a particular index of a string.
+
+`$phrase[0] = "B";`
+This will change the value at the particular index of the string.
+
+`str_replace("Giraffe", "Panda", $phrase);`
+This will replace the string Giraffe with Panda in the variable phrase.
+
+`echo substr($phrase, 8, 4);`
+This will return a substring from the variable phrase, starting at index 8, 4 characters forward.
+
+## numbers
+### operators
+Just like JS, you can use +-/* and % to manipulate numbers.
+
+### incrementors/decrementors
+we can use $num++, $num--
+
+there is also 
+
+`$num+= 5;`
+`$num -= 5;
+
+The above will add or subtract 5 to the current value of num and update the value.
+
+### methods
+`abs($num);`
+absolute value
+
+`pow(2, 4);`
+this will return 2^4
+
+`sqrt(144);`
+this will return the square root of 144
+
+`max(2, 10);`
+this function will tell us which of these two numbers is larger
+
+`min(2, 10);`
+this function will tell us which of these two numbers is smaller
+
+`round(3.2);`
+This will round down to 3 (would round up if it was >3.5)
+
+`floor(3.9);`
+This will always round down (to 3 in this case).
+
+`ceil(3.1);`
+This will always round up (to 4 in this case).
+
+## user input
+If we make a form in our HTML like:
+
+	<form action="site.php" method="get">
+	
+	        Name: <input type="text" name="name"/>
+	
+	        <input type="submit"/>
+	
+	</form>
+
+We can access the input with:
+
+`$_GET["name"];`
+
+## form URL query strings
+when using a form in php, variables will be placed into the URL after a ? 
+
+For example:
+
+`http://localhost:4000/basic_calculator/site.php?num1=10&num2=21`
+
+The above example has num1 and num2 stored, and these are being rendered on screen via `$_GET["num1"]`
+
