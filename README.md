@@ -80,3 +80,9 @@ true or false value
 
 ## null
 null value basically means a variable has no value
+
+## Strings
+Plain text variables.
+
+### methods
+`strtolower();`

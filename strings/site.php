@@ -9,7 +9,7 @@
 <body>
     <?php
         $phrase = "Elephant Academy";
-        echo $phrase;
+        echo strtolower($phrase);
      ?>
 </body>
 </html>
